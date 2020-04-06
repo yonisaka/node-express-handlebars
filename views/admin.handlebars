@@ -1,0 +1,29 @@
+
+<div class="ui container text">
+	<br>
+	<h3 class="ui header">List Post</h3>
+	<a class="ui primary button" href="/admin/post"> Add </a>
+	<table class="ui very basic collapsing celled table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Title</th>
+				<th>Date Created</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results}}
+			<tr>
+				<td>{{ id }}</td>
+				<td width="250px">{{ article_title }}</td>
+				<td>{{ dateFormat upload_at "dddd, MMMM YYYY"}}</td>
+				<td>
+					<a class="ui secondary button" href="/admin/edit/{{ id }} ">Edit</a>	
+					<a class="ui red button" href="/admin/delete/{{ id }}">Delete</a>
+				</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>

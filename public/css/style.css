@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto+Mono&display=swap');
+
+h2, h3, h4 {
+	
+	font-family: 'Roboto Mono', monospace;
+}
+body, p {
+	font-family: 'Nunito Sans', sans-serif;
+}
+.profil {
+	margin-top: 50px;
+}
+table a {
+  color :#666;
+}
+table a:hover{
+  color : #000;
+}
+
+.footer {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	
+}
+#login {
+	max-height: 300px;
+	margin: auto;
+}
+
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 3em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+.secondary.pointing.menu .toc.item {
+  display: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      #login {
+		margin: auto;
+		width: 350px;
+		
+	}
+}

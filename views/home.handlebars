@@ -1,0 +1,25 @@
+
+
+<div class="ui container text">
+  <img class="ui small centered circular image profil" src="/assets/image/violet.png">
+  <h2 class="ui header centered title">Yoni Saka | Lacrose</h2>
+  <h4 class="ui horizontal divider header">
+    Description
+  </h4>
+  <p class="centered"><b>Hello World</b> U can call me <b><i>Lacrose</i></b>, this is my personal blog. In this blog I will share something I learned <b>Hehe</b></p>
+  <h4 class="ui horizontal divider header">
+    <i class="tag icon"></i>
+    Recent Post
+  </h4>
+  <table class="ui very basic table">
+    
+    <tbody>
+      {{#each results}}
+      <tr>
+        <td width="200px">{{ dateFormat upload_at "dddd, MMMM YYYY"}}</td>
+        <td><a href="/home/view/{{ id }}">{{ article_title }}</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

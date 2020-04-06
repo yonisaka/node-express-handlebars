@@ -1,0 +1,24 @@
+<div class="ui container text" >
+	<br>
+	  <div class="ui header">Add Post</div>
+	  <div class="scrolling content">
+	    <form class="ui form" action="/admin/post/save" method="POST"enctype="multipart/form-data">
+		  <div class="field">
+		    <label>Title</label>
+		    <input type="text" name="title" placeholder="First Name">
+		  </div>
+		  	<div class="field">
+		      	<label>Content</label>
+		        <textarea class="ckeditor" id="ckedtor" name="content"></textarea>
+		    </div>
+		    <div class="field">
+		    	 <label>Upload Image</label>
+		    	 <input type="file" name="image">
+		    </div>
+		  <div class="actions">
+		    <button class="ui approve button">Cancel</button>
+		    <button type="submit" class="ui positive button">Add</button>
+		  </div>
+		</form>
+	  </div>
+	</div>

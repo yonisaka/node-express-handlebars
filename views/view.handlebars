@@ -1,0 +1,9 @@
+<div class="ui container text">
+    <br>
+    {{#each results}}
+    <h2 class="ui header">{{article_title}} </h2>
+    <img class="ui medium rounded centered image" src="/assets/upload/{{article_image}}">
+    <br>
+    <p class="ui text">{{ article_content }}</p>
+    {{/each}}
+</div>
